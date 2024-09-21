@@ -1,4 +1,5 @@
 <?php
+include '../layouts/header.php';
 include '../controllers/events.php';
 ?>
 
@@ -19,7 +20,6 @@ include '../controllers/events.php';
             <th>Budget</th>
             <th>Description</th>
             <th>Manager ID</th>
-            <th>Action</th>
         </tr>
         <?php echo $str ?>
     </table>

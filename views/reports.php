@@ -1,4 +1,5 @@
 <?php
+include '../layouts/header.php';
 include '../controllers/reports.php';
 ?>
 

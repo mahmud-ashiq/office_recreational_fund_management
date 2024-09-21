@@ -1,0 +1,130 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Main container to hold the content and footer */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures footer is pushed to the bottom */
+    min-height: 100vh; /* Ensures the body takes up the full viewport height */
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background-color: #4cae4c;
+}
+
+/* Home Section */
+.home-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+    flex-grow: 1; /* Allows content to grow and push the footer down */
+}
+
+.intro {
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #555;
+}
+
+.features {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.features h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.feature-item h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.feature-item button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.feature-item button:hover {
+    background-color: #4cae4c;
+}
+.feature-img {
+    width: 250px; /* Set the desired width */
+    height: 150px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    
+    background-color: #333;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+}
