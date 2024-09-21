@@ -6,7 +6,7 @@ include '../controllers/events.php';
 
 <head>
     <title>Events</title>
-    <link rel="stylesheet" type="text/css" href="../css/listEvent.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body>
