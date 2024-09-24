@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 21, 2024 at 11:40 AM
+-- Generation Time: Sep 24, 2024 at 05:37 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -209,7 +209,10 @@ INSERT INTO `proposal` (`p_id`, `description`, `p_date`, `p_budget`, `status`, `
 (8007, 'Birthday surprise to manager', '2024-06-19', 3000, 'completed', 1009, 5003),
 (8008, 'Camping to Khulna', '2024-06-02', 11000, 'under planning', 1010, 5004),
 (8009, 'IT firm visit', '2024-09-01', 4000, 'under planning', 1010, 5004),
-(8010, 'Yearly vacation', '2024-12-01', 33000, 'under planning', 1007, 5001);
+(8010, 'Yearly vacation', '2024-12-01', 33000, 'under planning', 1007, 5001),
+(8011, 'New Year Party', '2023-12-05', 80000, 'completed', 1008, 5001),
+(8012, 'Year Party', '2023-12-05', 8000, 'completed', 1007, 5001),
+(8013, 'picnic', '2024-09-10', 12000, 'under planning', 1010, 5001);
 
 -- --------------------------------------------------------
 
@@ -320,6 +323,7 @@ ALTER TABLE `manager`
 --
 ALTER TABLE `proposal`
   ADD PRIMARY KEY (`p_id`),
+  ADD UNIQUE KEY `p_id` (`p_id`),
   ADD KEY `fk_emplo` (`manager_id`),
   ADD KEY `fk_depar` (`d_id`);
 
@@ -336,6 +340,16 @@ ALTER TABLE `report`
 ALTER TABLE `sponsor`
   ADD PRIMARY KEY (`sp_id`),
   ADD KEY `fk_e` (`manager_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `proposal`
+--
+ALTER TABLE `proposal`
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8014;
 
 --
 -- Constraints for dumped tables
