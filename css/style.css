@@ -52,3 +52,35 @@ button {
 button:hover {
     background-color: #4cae4c;
 }
+
+
+.button-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    
+}
+
+.button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Add some padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it an inline-block element */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+.button:active {
+    transform: scale(0.95); /* Slightly shrink button when clicked */
+}
+

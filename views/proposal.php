@@ -22,8 +22,14 @@ include '../controllers/proposal.php';
             <th>Manager ID</th>
             <th>Department ID</th>
         </tr>
+
         <?php echo $str ?>
+
     </table>
+    <div class="button-container">
+        <button class="button" onclick="window.location.href='addProposal.php'">ADD</button>
+    </div>
+
 </body>
 
 </html>

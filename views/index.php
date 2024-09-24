@@ -41,7 +41,7 @@
                     <img src="../images/report.png" alt="Reports" class="feature-img">
                     <h3>Reports</h3>
                     <p>Generate detailed reports of the fund's utilization and event performance.</p>
-                    <button onclick="location.href='../views/report.php'">Go to Reports</button>
+                    <button onclick="location.href='../views/reports.php'">Go to Reports</button>
                 </div>
             </div>
         </div>

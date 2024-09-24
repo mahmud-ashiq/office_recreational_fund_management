@@ -25,7 +25,11 @@ function viewReport($conn){
   $result= $conn->query($sql);
   return $result;
 }
-
+function addProposal($conn, $desc, $date, $budget, $m_id, $d_id){
+  $sql = "INSERT INTO proposal VALUES (NULL, '$desc', '$date','$budget','under planning', '$m_id', '$d_id')";
+  $result = $conn->query($sql);
+  return $result;
+}
 }
 
 ?>
